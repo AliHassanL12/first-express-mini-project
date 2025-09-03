@@ -3,8 +3,9 @@ const express = require('express');
 const app = express();
 const port = 3000;
 
+app.set('view engine', 'html');
 app.listen(port);
 
 app.get('/', (req, res) => {
-    console.log('Request Made!');
+    res.sendFile(__dirname + '/views/index.html');
 })
