@@ -24,7 +24,6 @@ html, body {
 
 .link {
     display: inline-block;
-    border: 1px solid red;
     border-radius: 8px;
     margin: 0.5rem;
     padding: 0.5rem;
@@ -34,11 +33,39 @@ p {
     padding: 10px;
 }
 
+.welcomeDiv {
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+}
+
 .welcomeText {
-    height: 100%;
+    display: flex;
+    justify-content: center;
+    flex-grow: 1;
+    font-size: 3rem;
+    text-shadow: 3px 2px 2px black;
+    border-radius: 8px;
+}
+
+.logo {
+    font-weight: bold;
+    margin-left: 0.75rem;
+    display: flex;
+    align-items: center;
+    font-size: 2.5rem;
+}
+
+.space {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    border: solid 1px green;
+}
+
+.headerDiv {
+    display: flex;
+    justify-content: space-between;
+}
+
+.links {
+    margin: 0.25rem;
 }
